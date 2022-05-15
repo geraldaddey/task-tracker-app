@@ -1,11 +1,13 @@
 import React from "react";
 import Button from "./Button";
+import Task from "./Task";
+import Tasks from "./Tasks";
 
 const author = "Gerald Addey";
 
 const Header = ({ title }) => {
   const onClick = () => {
-    console.log("click");
+    console.log("clicked");
   };
 
   return (
