@@ -15,9 +15,13 @@ function App() {
     console.log("deleted " + id);
   };
 
-  // Toggle Reminder
+  // Toggle Reminder **************************************
   const toggleReminder = (id) => {
-    console.log(id);
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, reminder: !task.reminder } : task
+      )
+    );
   };
 
   // const name = "Gerald";
