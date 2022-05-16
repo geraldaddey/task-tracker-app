@@ -24,6 +24,14 @@ function App() {
     return data;
   };
 
+  // Fetch a single task
+  const fetchTask = async () => {
+    const res = await fetch(`http://localhost:5000/tasks${id}`);
+    const data = await res.json();
+
+    return data;
+  };
+
   // Add Task
 
   const addTask = async (task) => {
@@ -35,7 +43,7 @@ function App() {
       body: JSON.stringify(task),
     });
 
-    const data = res.json();
+    const data = await res.json();
     setTasks([...tasks, data]);
 
     // const addTask = (task) => {
