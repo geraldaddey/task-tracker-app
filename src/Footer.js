@@ -1,10 +1,17 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <footer>
-      <p>Gerald Addey &copy; 2022</p>
-      <a href="/about">About</a>
+    <footer style={{ footerStyles }}>
+      <p>Gerald Addey Copyright&copy; 2022</p>
+      <Link to="/about">About</Link>
     </footer>
   );
+};
+
+const footerStyles = {
+  fontSize: "light",
+  color: "grey",
 };
 
 export default Footer;
