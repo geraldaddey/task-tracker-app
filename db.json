@@ -1,3 +1,22 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "id": 1,
+      "day": "June 4th",
+      "text": "dental appointment",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "day": "Feb 15th",
+      "text": "gym and workout session",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "day": "April 29th",
+      "text": "road trip and houseparty",
+      "reminder": true
+    }
+  ]
 }
